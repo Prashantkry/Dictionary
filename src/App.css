@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  /* background: teal; */
+  background-image: url('b2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* filter: blur(8px); */
+}
+.con{
+  background: #fff;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 5px 5px rgba(47, 216, 216, 0.705);
+}
+
+.con h1{
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: teal;
+  margin-bottom: 15px;
+}
+
+.con form .row{
+  display: flex;
+  flex-direction: column;
+}
+
+.con form .row .voice-icons{
+  background: #fff;
+  margin-top: -15px;
+  border:1px solid #bbb;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: none;
+  margin-bottom: 10px;
+  text-align: right;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.con form .row .voice-icons .select-voice{
+  flex: 1;
+}
+
+.con form .row .voice-icons i{
+  cursor: pointer;
+  opacity: .5;
+  margin-left: 10px;
+  color: black;
+}
+
+.con form .row .voice-icons i.speak{
+  color: teal;
+}
+
+.con form textarea{
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  padding: 3px 5px;
+  margin-bottom: 12px;
+  resize: none;
+}
+
+.con form select{
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.con ul{
+  list-style: none;
+  margin-top: 5px;
+  font-size: 15px;
+  max-height: 250px;
+  overflow: scroll;
+}
+
+.con ul .word h2{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.con ul .word span{
+  font-size: .8rem;
+  opacity: .8;
+}
+
+.con ul .contain{
+  margin-top: 7px;
+}
+
+.con ul .contain .details{
+  margin-top: 7px;
+  border-top: 1px solid  #eee;
+  border-bottom: 1px solid  #eee;
+  margin-top: 10px;
+  padding: 5px 0;
+  padding-left: 10px;
+  border-radius: 5px;
+  border-left: 3px solid teal;
+}
+
+.con ul .contain .details p{
+  opacity: .8;
+}
+.con ul .contain .synonyms span{
+  opacity: .8;
+  border-bottom: 1px dotted rgb(128, 60, 0);
+  cursor: pointer;
+}
+
+.con ul .contain .synonyms span:hover{
+  color: #2681dc;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
